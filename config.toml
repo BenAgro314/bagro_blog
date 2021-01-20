@@ -1,0 +1,45 @@
+baseURL = "https://example.com"
+title = "Agro Blog"
+languageCode = "en-us"
+theme = "devise"
+relativeURLs = true
+enableEmoji = true
+googleAnalytics = ""
+enableRobotsTXT = true
+copyright = "&copy; Copyright 2021, Ben Agro"
+
+# Main menu items
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About"
+    url = "/about/"
+    weight = -110
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    title = "Posts"
+    url = "/post/"
+    weight = -100
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "Categories"
+    url = "/categories/"
+    weight = -90
+
+# Configuration Features
+[params]
+  description = "A Collection of Writings by Ben Agro"      # Your meta description of the site
+  header_title = "Agro Blog"                 # Your header title
+  header_subtitle = "A collection of thoughts by Ben Agro" # Your header subtitle
+  home_image = "/images/zach_mitchell_and_me.jpg"          # Path to header image starting from the static directory
+  recent_posts = 5                           # Max amount of recent posts to show
+  mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+  [params.style]                             # CSS style overrides
+    backgroundColor = "#f8f9fa"
+    fontColor = "#212529"
+  [[params.social]]
+    fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
+    href = "http://github.com/BenAgro314"      # Link to associate with icon (http://, https://, mailto:)
